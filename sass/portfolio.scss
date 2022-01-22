@@ -1,0 +1,18 @@
+@import './utils/variables';
+@import './base/normalize';
+@import './utils/visually-hidden';
+
+@import './base/common';
+@import './base/container';
+
+@import './components/social-links';
+@import './components/section';
+
+/*=====Шапка сайта=====*/
+@import './layout/page-header';
+/* Стили для portfolio.html */
+@import './layout/portfolio-sorting';
+@import './layout/portfolio-cards';
+
+/*=====Футер======*/
+@import './layout/footer';
