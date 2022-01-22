@@ -11,6 +11,7 @@
 @import './components/social-links';
 @import './components/section';
 
+
 /*=====Шапка сайта=====*/
 @import './layout/page-header';
 /*=====Герой=====*/
@@ -25,3 +26,7 @@
 @import './layout/clients';
 /*=====Футер======*/
 @import './layout/footer';
+
+/* Стили для portfolio.html */
+@import './layout/portfolio-sorting';
+@import './layout/portfolio-cards';
