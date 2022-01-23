@@ -1,14 +1,21 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  &__title {
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    color: var(--primary-text-color);
-    text-align: center;
+  &--no-padding-top {
+    padding-top: 0;
   }
+
+  &--other-bcg {
+    background-color: var(--secondary-bg-color);
+  }
+}
+
+.section__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
+  text-align: center;
 }
