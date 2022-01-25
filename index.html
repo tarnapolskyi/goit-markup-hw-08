@@ -29,6 +29,11 @@
                     <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
                 </ul>
             </nav>
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-btn__icon">
+                    <use href="./images/icons.svg#icon-mobile-menu"></use>
+                </svg>
+            </button>
             <ul class="contacts">
                 <li class="contacts__item">
 
@@ -46,6 +51,48 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="close-btn__icon">
+                        <use href="./images/icons.svg#icon-mobile-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-nav">
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link mobile-nav--current" href="">Студия</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-contacts">
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__phone-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-social-network">
+                    <li class="mobile-social-network__item">
+                        <a class="mobile-social-network__link" href="#">Instagram</a>
+                    </li>
+                    <li class="mobile-social-network__item">
+                        <a class="mobile-social-network__link" href="#">Twitter</a>
+                    </li>
+                    <li class="mobile-social-network__item">
+                        <a class="mobile-social-network__link" href="#">Facebook</a>
+                    </li>
+                    <li class="mobile-social-network__item">
+                        <a class="mobile-social-network__link" href="#">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -106,7 +153,7 @@
             </div>
         </section>
         <!--Чем мы занимаемся-->
-        <section class="section section--no-padding-top">
+        <section class="section section--no-padding-top production-hidden">
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="production">
@@ -169,7 +216,7 @@
                                 type="image/webp">
                             <source media="(min-width: 320px)"
                                 srcset="./images/our-team/product-designer-mobile.jpg 1x, ./images/our-team/product-designer-mobile@2x.jpg 2x">
-                            <img src="./images/our-team/product_designer-mobile.jpg" alt="Игорь Демьяненко" />
+                            <img src="./images/our-team/product-designer-mobile.jpg" alt="Игорь Демьяненко" />
                         </picture>
 
                         <div class="team__information">
@@ -515,7 +562,7 @@
                     <use href="./images/icons.svg#icon-modal-close-btn"></use>
                 </svg>
             </button>
-            <b class="modal__header">Оставьте свои данные, мы вам перезвоним</b>
+            <h2 class="modal__header">Оставьте свои данные, мы вам перезвоним</h2>
             <form class="modal-form">
 
                 <label class="modal-form__label">
@@ -557,6 +604,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

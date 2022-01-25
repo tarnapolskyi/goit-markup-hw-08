@@ -1,4 +1,5 @@
 .modal__header {
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -75,9 +76,12 @@
   align-items: center;
   margin-bottom: 30px;
 
+  font-size: 12px;
+  line-height: 1.17;
+@media screen and(min-width: 1199px){
   font-size: 14px;
   line-height: 1.71;
-
+}
   &::before {
     display: block;
     content: '';
@@ -93,7 +97,7 @@
     border-color: var(--accent-color);
   }
 
-  .modal-form__policy:checked + &::before {
+  .modal-form__policy:checked + &__checkbox::before {
     background-image: url(../images/check-mark.svg);
     background-color: var(--accent-color);
     background-size: 15px 14px;
